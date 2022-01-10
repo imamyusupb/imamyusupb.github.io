@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.container{
+    padding: 0 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn{
+    padding: 8px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.cta-btn{
+    background: #f8937c ;
+    color: #ffff;
+}
+
+.cta-email{
+
+    color:black;
+}
+
+.section{
+    padding: 96px 0;
+}
+
+.sectionfooter{
+    text-align: center;
+}
+
+.page-heading{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 36px;
+   position: relative;
+   margin-bottom: 48px; 
+}
+
+.page-heading::after{
+    content :'';
+    height: 10px;
+    width: 100px;
+    background: #dedede;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    bottom: -10px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+/* Home pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.home{
+    width:100% ;
+    background: #fff;
+}
+
+.header{
+    background: #feecc8;
+    padding: 16px 0;
+}
+
+.header > div {
+display: flex;
+flex-direction: column;
+}
+
+.header >div >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #382ce3;
+    font-size: 32px;
+
+}
+
+.menu {
+    color: #8684a0;
+    font-size: 32px;
+    display: block;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #353535;
+    background: #fff;
+    padding:  0 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+nav a:hover {
+    color: #ffff;
+    background: #ccc;
+}
+
+.intro-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.intro {
+    grid-area: 1 / 1 / 2 / 2;  
+}
+
+.intro-image {
+    grid-area: 2 / 1 / 3 / 2; 
+    padding: 16px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #353535;
+    margin: 32px 0 16px 0;
+}
+
+.intro h4 {
+    color: #8684a0;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.intro p {
+
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+/* About pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.about-me{
+    background: #f9f9f9;
+}
+
+.about-me>div>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.about-me-text {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.about-me-number{
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.about-me-text h2{
+    margin-bottom: 16px;
+    font-size: 32px;   
+}
+
+.about-me-text p {
+    margin-bottom: 16px;
+}
+
+.contact-details table {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+    margin-bottom: 16px;
+}
+
+.contact-details table td {
+    padding-right: 16px;
+}
+
+.contact-details table td:first-child{
+    font-weight: bold;
+    color: #8684a0;
+}
+
+.about-me-numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px
+
+}
+
+.number {
+    padding: 32px;
+    background: #dedede;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.number-skil1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.number-skil2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.number-skil3{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.number-skil4{
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.number-skil5{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.number-skil6{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.number-skil7{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+
+.number>p:first-child{ 
+    font-size: 48px;
+    font-weight: bolder;
+    color: #382ce3;
+}
+
+/* Services pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.service{
+    text-align: center;
+    padding: 32px;
+    background-color: #dedede;
+    cursor: pointer;
+    margin-right: 16px;
+    margin-bottom: 16px;
+   width: calc(100% - 64px);
+   transition: all 0.3s ease;
+}
+
+.service:hover{
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 10px #d0d0d0;
+}
+
+
+/* Portfolio pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.portfolio{
+    background-color: #fff9f9;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.project img{
+    width: 200px;
+    height: 300px;
+    margin-left: 120px;
+}
+
+.project-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(211, 221, 191);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    transition: all 0.3s ease;
+}
+
+.project:hover .project-overlay {
+    opacity: 0.8;
+
+}
+
+.project-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text h3{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.project-text h3,.project-text h4{
+    color: #fff;
+    font-weight: bold;
+
+}
+
+
+/* Contact pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.contact-me >div>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.contact-form {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.map{
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.form-group{
+    margin-bottom: 32px;
+}
+
+.form-group label{
+    display: block;
+    width: 100%;
+    color: #8684a0;
+    font-weight: bold;
+}
+
+.form-group input , .form-group textarea {
+    display: block;
+    max-width: 100%;
+    padding: 8px 2px;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #8a815e;
+    width: calc(100% - 4px);
+}
+
+.form-group button {
+    outline: none;
+    border: none;
+    padding: 16px 32px;
+    text-transform:uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.map iframe {
+    max-width: 100%;
+}
+
+/* Footer pagenya mulai disini */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+/* -------------------------- */
+
+.footer{
+    background: #feecc8;
+    text-align: center;
+    height: 40px;
+    align-content: center;
+}
+
+.footer h3{
+    color: #353535;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+.blink {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+  }
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
